@@ -1,30 +1,20 @@
 const express = require("express");
 
-const PizzaWing = require('./models/pizzaModel')
-
-const db = require("./db");
+const PizzaWing = require('./models/pizzawingModel')
 
 const app = express();
-
+const db = require("./db");
 app.use(express.json());
+
+const  pizzaswingsroute = require('./routes/pizzaswingsRoute')
+
+app.use('/api/pizzaswings/', pizzaswingsroute)
 
     app.get('/' , (req , res)=>{
         res.send('Server Is Working :D' + port); 
     });
 
-    app.get("/getpizzaswings", (req, res) => {
 
-        PizzaWing.find({}, (err, docs) => {
-            if(err) {
-                console.log(err);
-            } else{
-                    res.send(docs);
-                }
-        })
-
-    });
-
-
-const port = process.env.PORT || 8003;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => `Server running on port port 🔥`)
