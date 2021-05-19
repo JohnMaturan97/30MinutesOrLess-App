@@ -46,3 +46,17 @@ code {
     box-shadow: none !important;
     border-color:red !important;
   }
+
+  .fa-plus {
+    color:blue !important;
+    margin: 5px;
+  }
+
+  .fa-minus {
+    color: red !important;
+    margin: 5px;
+  }
+
+  .fa-trash{
+    color :rgb(124, 12, 12) !important;
+  }
