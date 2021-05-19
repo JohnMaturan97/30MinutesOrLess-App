@@ -25,11 +25,11 @@ code {
   }
 
   .nav-link{
-    color:rgb(255, 255, 255) !important;
+    color:rgb(24, 15, 15) !important;
     background-color: rgb(221,138,61);
   }
   .navbar-brand{
-    color:rgb(255, 255, 255) !important;
+    color:rgb(156, 0, 0) !important;
     background-color: rgb(221,138,61);
     display: flex !important;
   }
