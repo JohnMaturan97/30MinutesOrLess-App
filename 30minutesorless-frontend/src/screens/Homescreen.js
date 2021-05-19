@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllPizzasWings } from "../actions/pizzawingActions";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 //import pizzaswings from "../pizzaswingsdata";
 import PizzaWing from "../components/PizzaWing";
 
@@ -21,9 +23,9 @@ export default function Homescreen() {
     <div>
       <div className="row justify-content-center">
         {loading ? (
-          <h1>Loading</h1>
+          <Loading/>
         ) : error ? (
-          <h1>System Failure</h1>
+          <Error error='System Failure, Check Yo Self! LOLOL!' />
         ) : (
           pizzaswings.map((pizzawing) => {
             return (
