@@ -28,7 +28,7 @@ export default function Cartscreen() {
                            </div>
 
                            <div className='m-1 w-100'>
-                               <img src={item.image} style={{height:'80px' , height:'80px'}}/>
+                               <img src={item.image} style={{height:'80px' , width: '80px'}}/>
                            </div>
                            <div className='m-1 w-100'>
                            <i className="fa fa-trash mt-5" aria-hidden="true" onClick={()=>{dispatch(deleteFromCart(item))}}></i>

@@ -60,3 +60,13 @@ code {
   .fa-trash{
     color :rgb(124, 12, 12) !important;
   }
+
+  input {
+    margin-top: 10px !important;
+    box-shadow: none !important;
+  }
+
+  .btn {
+    margin-top: 10px !important;
+    box-shadow: none !important;
+  }
