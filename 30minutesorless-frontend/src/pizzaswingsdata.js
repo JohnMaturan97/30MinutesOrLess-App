@@ -123,7 +123,7 @@ const pizzaswings = [
         large: 18,
       },
     ],
-    category: "Vegeterian Pizzas w/ Toppings",
+    category: "Vegeterian Pizzas",
     image:
       "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza-500x500.jpg",
     description:
@@ -139,7 +139,7 @@ const pizzaswings = [
         large: 18,
       },
     ],
-    category: "Vegeterian Pizzas w/ Toppings",
+    category: "Vegeterian Pizzas",
     image: "https://s23209.pcdn.co/wp-content/uploads/2012/05/Jalapeno-Popper-PizzaIMG_1697-600x900.jpg?p=270",
     description:
       "This pizza is amazing and can become more delicious if we will add some more cheese in it. Ingredients are yeast, sugar, olive oil, salt, and all-purpose flour in a big bowl. After mixing all the ingredients, it is baked by adding Jalapeno and Paprika with corns over the cheese layer. The base is made crunchy to give it best taste. It can be made more tasty by sprinkling chili flakes and Oregano as per the taste.",
@@ -154,7 +154,7 @@ const pizzaswings = [
         large: 18,
       },
     ],
-    category: "French Onion Pizza",
+    category: "Vegeterian Pizzas",
     image:
       "https://i1.wp.com/www.myhumblekitchen.com/wp-content/uploads/2013/04/roasted_garlic_pizza.jpg?resize=660%2C463",
     description:
@@ -170,7 +170,7 @@ const pizzaswings = [
         large: 18,
       },
     ],
-    category: "Vegeterian Pizzas w/ Toppings",
+    category: "Vegeterian Pizzas",
     image: "https://cdn.theatlantic.com/thumbor/QuIN4IpSKkfBbAnzDQYEnKJeszA=/0x52:1000x614/720x405/media/img/mt/2014/10/shutterstock_53696794/original.jpg",
     description:
       "Some people don’t like pizza that have toppings on it they just like cheese, so this pizza is for them which have two different cheese. it is baked by adding cheddar cheese and mozzarella over the pizza base.",
@@ -187,7 +187,7 @@ const pizzaswings = [
         large: 30,
       },
     ],
-    category: "Famous Wings ",
+    category: "Famous Wings",
     image:
       "https://i.pinimg.com/originals/2b/7d/33/2b7d334a5cc6aa5849ae866f52519e9a.jpg",
     description: " One of the kind Wings for Lunch or just in general.",
@@ -202,7 +202,7 @@ const pizzaswings = [
         large: 30,
       },
     ],
-    category: "Famous Wings ",
+    category: "Famous Wings",
     image:
       "https://images.squarespace-cdn.com/content/v1/5bfc60f25417fc954a8e4c42/1597173091757-BFXW8V9QEX4RA0778TEC/ke17ZwdGBToddI8pDm48kJ6o_yZYpjQkfZPjF3vytdp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USZYvAGzzady3VC96TTNoNmzRoZPQk3rse1pdh5DxnMvzrD36oouzk3SSBf3bbVhnA/wings-pint-brick-wall-optimized.jpg?format=2500w",
     description:
@@ -218,7 +218,7 @@ const pizzaswings = [
         large: 30,
       },
     ],
-    category: "Famous Wings ",
+    category: "Famous Wings",
     image:
       "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/newscms/2017_04/1190790/new_york_city_turntable_chicken_jazz_chicken_wings-1190790.jpg",
     description: "The best wings for Netflix and Chill",
@@ -233,7 +233,7 @@ const pizzaswings = [
         large: 30,
       },
     ],
-    category: "Famous Wings ",
+    category: "Famous Wings",
     image:
       "https://lilluna.com/wp-content/uploads/2018/05/honey-bbq-wings-resize-5.jpg",
     description: "Boneless wings with honey and life choices. ",
@@ -248,7 +248,7 @@ const pizzaswings = [
         large: 30,
       },
     ],
-    category: "Famous Wings ",
+    category: "Famous Wings",
     image:
       "https://honkytonkbbq.com/wp-content/uploads/2020/10/wings72.jpg",
     description:
@@ -280,7 +280,7 @@ const pizzaswings = [
         large: 30,
       },
     ],
-    category: "Famous Wings ",
+    category: "Famous Wings",
     image:
       "https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com%2F012fe34a-b827-48a0-95ab-c99dceb6a633%2Forig.jpg&quality=85&w=500&h=0&mode=auto&format=webp&v=4",
     description:
