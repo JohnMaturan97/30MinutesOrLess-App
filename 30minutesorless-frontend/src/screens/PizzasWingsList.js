@@ -17,7 +17,6 @@ export default function PizzasWingslist() {
     dispatch(getAllPizzasWings());
   }, []);
   return <div>
-    <b><h1>Pizzas & Wings List</h1></b>
     {loading && (<Loading/>)}
     {error && (<Error error='System Failure'/>)}
 

@@ -16,8 +16,6 @@ export default function Userslist() {
     }, [])
     return (
         <div>
-
-            <h1>Users list</h1>
             {loading && <Loading />}
       {error && <Error error="Something went wrong" />}
        <table className='table table-striped table-bordered table-responsive-sm'>

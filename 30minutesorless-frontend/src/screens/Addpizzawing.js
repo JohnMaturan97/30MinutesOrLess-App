@@ -41,7 +41,7 @@ export default function Addpizzawing() {
   return (
     <div>
       <div className='text-left shadow-lg p-3 mb-5 bg-grey rounded'>
-        <h1>Add Pizza and Wings</h1>
+        <h1>Add New Items Form</h1>
 
         {loading && (<Loading/>)}
         {error && (<Error error='System Failure, Try Again!'/>)}
@@ -111,7 +111,7 @@ export default function Addpizzawing() {
               setimage(e.target.value);
             }}
           />
-          <button className='btn mt-3' type='submit'>Add Pizza or Wing</button>
+          <button className='btn mt-3' type='submit'>One Click Away!</button>
         </form>
       </div>
     </div>

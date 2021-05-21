@@ -23,27 +23,27 @@ export default function Adminscreen() {
     <div>
       <div className="row justify-content-center p-3">
         <div className="col-md-10">
-          <h2 style={{ fontSize: "35px" }}>Admin Panel</h2>
+          <h2 style={{ fontSize: "35px" }}>Admin Panel 🗃️📑</h2>
 
           <ul className="adminfunction">
             <li>
               <Link to={"/admin/userslist"} style={{ color: "white" }}>
-                Users List
+                <b>Users List</b>
               </Link>
             </li>
             <li>
               <Link to={"/admin/pizzaswingslist"} style={{ color: "white" }}>
-                Items List
+                <b>Items List</b>
               </Link>
             </li>
             <li>
               <Link to={"/admin/addpizzawing"} style={{ color: "white" }}>
-                Add New Items
+              <b>Add New Items</b>
               </Link>
             </li>
             <li>
               <Link to={"/admin/orderslist"} style={{ color: "white" }}>
-                Orders List
+              <b>Orders List</b>
               </Link>
             </li>
           </ul>
