@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import {useDispatch, useSelector} from 'react-redux';
 import { addToCart } from "../actions/cartActions";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function PizzaWing({ pizzawing }) {
+
+  AOS.init({
+    guration:1000
+  })
+
   const [quantity, setquantity] = useState(1);
   const [varient, setvarient] = useState("small");
   const [show, setShow] = useState(false);
@@ -19,6 +26,7 @@ export default function PizzaWing({ pizzawing }) {
 
   return (
     <div
+      data-aos='zoom-in'
       className="shadow-lg p-3 mb-5 bg-white rounded"
     >
     <div onClick={handleShow}>

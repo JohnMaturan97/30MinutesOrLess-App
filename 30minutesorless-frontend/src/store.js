@@ -4,11 +4,10 @@ import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 
 import {composeWithDevTools} from 'redux-devtools-extension';
-import {getAllPizzasWingsReducers} from './reducers/pizzawingReducers';
+import {getAllPizzasWingsReducers, addPizzaWingReducer, getPizzaWingByIdReducer, editPizzaWingReducer} from './reducers/pizzawingReducers';
 import {cartReducer} from './reducers/cartReducer';
-import { loginUserReducer, registerUserReducer} from './reducers/userReducers';
-import {placeOrderReducer, getUserOrdersReducer } from './reducers/orderReducers';
-
+import { loginUserReducer, registerUserReducer, getAllUsersReducer} from './reducers/userReducers';
+import {placeOrderReducer, getUserOrdersReducer, getAllOrdersReducer } from './reducers/orderReducers';
 
 const finalReducer = combineReducers ({
     getAllPizzasWingsReducers : getAllPizzasWingsReducers,
@@ -16,7 +15,12 @@ const finalReducer = combineReducers ({
     registerUserReducer : registerUserReducer,
     loginUserReducer:loginUserReducer,
     placeOrderReducer : placeOrderReducer,
-    getUserOrdersReducer : getUserOrdersReducer
+    getUserOrdersReducer : getUserOrdersReducer,
+    addPizzaWingReducer : addPizzaWingReducer,
+    getPizzaWingByIdReducer : getPizzaWingByIdReducer,
+    editPizzaWingReducer : editPizzaWingReducer,
+    getAllOrdersReducer : getAllOrdersReducer,
+    getAllUsersReducer : getAllUsersReducer
     
 }) 
 

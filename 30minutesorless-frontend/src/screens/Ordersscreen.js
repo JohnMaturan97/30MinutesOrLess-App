@@ -27,7 +27,7 @@ export default function Ordersscreen() {
                 {loading && (<Loading/>)}
                 {error && (<Error error='Something went wrong'/>)}
                 {orders && orders.map(order=>{
-                    return <div className="col-md-8 m-2 p-1" data-aos='fade-down'  style={{backgroundColor:'red' , color:' bold black'}}>
+                    return <div className="col-md-8 m-2 p-1" data-aos='fade-down'  style={{backgroundColor:'grey' , color:' bold black'}}>
 
                             <div className="flex-container">
                                 <div className='text-left w-100 m-1'>

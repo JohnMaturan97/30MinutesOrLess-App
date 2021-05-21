@@ -10,7 +10,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
         <a className="navbar-brand" href="/">
-        <b> 📲 🧑‍🍳 30MinutesOrLess❗🚗💨🍕🍗🍺</b>
+        <b> 📲 🚗💨 30MinutesOrLess🍕🍗🍺</b>
         </a>
         <button
           className="navbar-toggler"

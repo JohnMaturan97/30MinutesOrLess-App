@@ -10,11 +10,11 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
   font-family: 'Mulish', sans-serif;
 
-  background: rgb(221,138,61);
-  background: -moz-linear-gradient(90deg, rgba(221,138,61,1) 100%, rgba(227,210,210,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(221,138,61,1) 100%, rgba(227,210,210,1) 100%);
-  background: linear-gradient(90deg, rgba(221,138,61,1) 100%, rgba(227,210,210,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dd8a3d",endColorstr="#e3d2d2",GradientType=1);
+  background: rgb(238,220,203);
+  background: -moz-linear-gradient(90deg, rgba(238,220,203,1) 100%, rgba(227,210,210,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(238,220,203,1) 100%, rgba(227,210,210,1) 100%);
+  background: linear-gradient(90deg, rgba(238,220,203,1) 100%, rgba(227,210,210,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eedccb",endColorstr="#e3d2d2",GradientType=1);
 
   
 }
@@ -24,13 +24,19 @@ code {
     monospace;
   }
 
+  .row {
+    margin: 50px; 
+  }
+
   .nav-link{
     color:rgb(24, 15, 15) !important;
-    background-color: rgb(221,138,61);
+    background-color: rgb(236, 231, 227);
+    display: flex !important;
+
   }
   .navbar-brand{
     color:rgb(156, 0, 0) !important;
-    background-color: rgb(221,138,61);
+    background-color: rgb(241, 237, 233);
     display: flex !important;
   }
   
@@ -73,3 +79,29 @@ code {
     margin-top: 10px !important;
     box-shadow: none !important;
   }
+
+  .adminfunction{
+    padding: 10px;
+    background-color: rgb(255, 195, 134);
+  }
+
+  .adminfunction li{
+    list-style-type: none !important;
+    display: inline !important;
+    color: rgb(128, 18, 18) !important;
+  }
+
+  .adminfunction li a{
+    color: rgb(128, 18, 18) !important;
+    padding: 20px;
+  }
+
+  td , th, tr {
+    text-align: left;
+  }
+
+  .table {
+    border-color: black !important;
+  }
+
+ 
