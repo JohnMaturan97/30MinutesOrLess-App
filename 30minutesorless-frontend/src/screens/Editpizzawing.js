@@ -14,45 +14,38 @@ export default function Editpizzawing({ match }) {
   const [description, setdescription] = useState("");
   const [category, setcategory] = useState("");
 
-  const getpizzawingbyidstate = useSelector((state) => state.getPizzaWingByIdReducer);
+  const getpizzawingbyidstate = useSelector(
+    (state) => state.getPizzaWingByIdReducer
+  );
 
   const { pizzawing, error, loading } = getpizzawingbyidstate;
 
-  const editpizzawingstate = useSelector((state) => state.editPizzaWingReducer)
-  const {editloading , editerror , editsuccess} = editpizzawingstate;
+  const editpizzawingstate = useSelector((state) => state.editPizzaWingReducer);
+  const { editloading, editerror, editsuccess } = editpizzawingstate;
 
   useEffect(() => {
-
-    if(pizzawing)
-    {
-        if(pizzawing._id==match.params.pizzawingid)
-        {
-            setname(pizzawing.name)
-            setdescription(pizzawing.description)
-            setcategory(pizzawing.category)
-            setsmallprice(pizzawing.prices[0]['small'])
-            setmediumprice(pizzawing.prices[0]['medium'])
-            setlargeprice(pizzawing.prices[0]['large'])
-            setimage(pizzawing.image)
-        }
-        else{
-            dispatch(getPizzaWingById(match.params.pizzawingid));
-        }
-        
-    }
-    else{
+    if (pizzawing) {
+      if (pizzawing._id == match.params.pizzawingid) {
+        setname(pizzawing.name);
+        setdescription(pizzawing.description);
+        setcategory(pizzawing.category);
+        setsmallprice(pizzawing.prices[0]["small"]);
+        setmediumprice(pizzawing.prices[0]["medium"]);
+        setlargeprice(pizzawing.prices[0]["large"]);
+        setimage(pizzawing.image);
+      } else {
         dispatch(getPizzaWingById(match.params.pizzawingid));
+      }
+    } else {
+      dispatch(getPizzaWingById(match.params.pizzawingid));
     }
-
-
-
-  }, [pizzawing , dispatch]);
+  }, [pizzawing, dispatch]);
 
   function formHandler(e) {
     e.preventDefault();
 
     const editedpizzawing = {
-      _id : match.params.pizzawingid,
+      _id: match.params.pizzawingid,
       name,
       image,
       description,
@@ -64,20 +57,19 @@ export default function Editpizzawing({ match }) {
       },
     };
 
-    dispatch(editPizzaWing(editedpizzawing))
+    dispatch(editPizzaWing(editedpizzawing));
   }
 
   return (
     <div>
-    
-     
-
       <div className="text-left shadow-lg p-3 mb-5 bg-white rounded">
-      <h1>Edit Pizza & Wing</h1>
+        <h1>Edit Pizza & Wing</h1>
         {loading && <Loading />}
         {error && <Error error="Something went wrong" />}
-        {editsuccess && (<Success success='Pizza & Wing details edited successfully'/>)}
-        {editloading && (<Loading />)}
+        {editsuccess && (
+          <Success success="Pizza & Wing details edited successfully" />
+        )}
+        {editloading && <Loading />}
 
         <form onSubmit={formHandler}>
           <input
@@ -149,5 +141,5 @@ export default function Editpizzawing({ match }) {
         </form>
       </div>
     </div>
-    );  
-  }
+  );
+}

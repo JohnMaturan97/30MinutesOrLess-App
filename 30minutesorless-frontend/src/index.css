@@ -1,108 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,300&family=Mulish:ital,wght@1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,300&family=Mulish:ital,wght@1,600&display=swap");
 
-body, html{
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Mulish", sans-serif;
 
-  background: rgb(238,220,203);
-  background: -moz-linear-gradient(90deg, rgba(238,220,203,1) 100%, rgba(227,210,210,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(238,220,203,1) 100%, rgba(227,210,210,1) 100%);
-  background: linear-gradient(90deg, rgba(238,220,203,1) 100%, rgba(227,210,210,1) 100%);
+  background: rgb(238, 220, 203);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(238, 220, 203, 1) 100%,
+    rgba(227, 210, 210, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(238, 220, 203, 1) 100%,
+    rgba(227, 210, 210, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(238, 220, 203, 1) 100%,
+    rgba(227, 210, 210, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eedccb",endColorstr="#e3d2d2",GradientType=1);
-overflow-x: hidden !important;
-  
+  overflow-x: hidden !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-  }
+}
 
-  .row {
-    margin: 50px; 
-  }
+.row {
+  margin: 50px;
+}
 
-  .nav-link{
-    color:rgb(24, 15, 15) !important;
-    background-color: rgb(236, 231, 227);
-    display: flex !important;
+.nav-link {
+  color: rgb(24, 15, 15) !important;
+  background-color: rgb(236, 231, 227);
+  display: flex !important;
+}
+.navbar-brand {
+  color: rgb(156, 0, 0) !important;
+  background-color: rgb(241, 237, 233);
+  display: flex !important;
+}
 
-  }
-  .navbar-brand{
-    color:rgb(156, 0, 0) !important;
-    background-color: rgb(241, 237, 233);
-    display: flex !important;
-  }
-  
-  h1{
-    font-size: 20px !important;
-  }
-  .flex-container{
-    display: flex !important;
-  }
-  .btn {
-    background-color: red !important;
-    color: white !important;
-  }
+h1 {
+  font-size: 20px !important;
+}
+.flex-container {
+  display: flex !important;
+}
+.btn {
+  background-color: red !important;
+  color: white !important;
+}
 
-  select {
-    box-shadow: none !important;
-    border-color:red !important;
-  }
+select {
+  box-shadow: none !important;
+  border-color: red !important;
+}
 
-  .fa-plus {
-    color:blue !important;
-    margin: 5px;
-  }
+.fa-plus {
+  color: blue !important;
+  margin: 5px;
+}
 
-  .fa-minus {
-    color: red !important;
-    margin: 5px;
-  }
+.fa-minus {
+  color: red !important;
+  margin: 5px;
+}
 
-  .fa-trash{
-    color :rgb(124, 12, 12) !important;
-  }
+.fa-trash {
+  color: rgb(124, 12, 12) !important;
+}
 
-  input {
-    margin-top: 10px !important;
-    box-shadow: none !important;
-  }
+input {
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
 
-  .btn {
-    margin-top: 10px !important;
-    box-shadow: none !important;
-  }
+.btn {
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
 
-  .adminfunction{
-    padding: 10px;
-    background-color: rgb(65, 64, 64);
-  }
+.adminfunction {
+  padding: 10px;
+  background-color: rgb(65, 64, 64);
+}
 
-  .adminfunction li{
-    list-style-type: none !important;
-    display: inline !important;
-    color: rgb(255, 255, 255) !important;
-  }
+.adminfunction li {
+  list-style-type: none !important;
+  display: inline !important;
+  color: rgb(255, 255, 255) !important;
+}
 
-  .adminfunction li a{
-    color: rgb(255, 255, 255) !important;
-    padding: 20px;
-  }
+.adminfunction li a {
+  color: rgb(255, 255, 255) !important;
+  padding: 20px;
+}
 
-  td , th, tr {
-    text-align: left;
-  }
+td,
+th,
+tr {
+  text-align: left;
+}
 
-  .table {
-    border-color: black !important;
-  }
-
-
- 
+.table {
+  border-color: black !important;
+}

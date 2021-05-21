@@ -21,13 +21,12 @@ export default function Homescreen() {
 
   return (
     <div>
-     <Filter />
+      <Filter />
       <div className="row justify-content-center">
-        
         {loading ? (
-          <Loading/>
+          <Loading />
         ) : error ? (
-          <Error error='System Failure, Check Yo Self! LOLOL!' />
+          <Error error="System Failure, Check Yo Self! LOLOL!" />
         ) : (
           pizzaswings.map((pizzawing) => {
             return (

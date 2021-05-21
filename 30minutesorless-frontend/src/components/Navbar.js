@@ -5,12 +5,12 @@ export default function Navbar() {
   const cartstate = useSelector((state) => state.cartReducer);
   const userstate = useSelector((state) => state.loginUserReducer);
   const { currentUser } = userstate;
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   return (
     <div>
       <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
         <a className="navbar-brand" href="/">
-        <b> 📲 🚗💨 30MinutesOrLess🍕🍗🍺</b>
+          <b> 📲 🚗💨 30MinutesOrLess🍕🍗🍺</b>
         </a>
         <button
           className="navbar-toggler"
@@ -21,25 +21,54 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"><i style={{color:'black'}} className="fas fa-bars"></i></span>
+          <span className="navbar-toggler-icon">
+            <i style={{ color: "black" }} className="fas fa-bars"></i>
+          </span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav ml-auto">
             {currentUser ? (
-
-
               <div className="dropdown mt-2">
-              <a style ={{color: 'red'}} className="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                {currentUser.name}
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a style ={{color: 'red'}} className="dropdown-item" href="/orders">ORDERS</a></li>
-                <li><a style ={{color: 'red'}} className="dropdown-item" href="#" onClick={() =>{dispatch(logoutUser())}}><li>LOGOUT</li></a></li>
-              </ul>
-            </div>
-
-
-
+                <a
+                  style={{ color: "red" }}
+                  className="dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {currentUser.name}
+                </a>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a
+                      style={{ color: "red" }}
+                      className="dropdown-item"
+                      href="/orders"
+                    >
+                      ORDERS
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      style={{ color: "red" }}
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        dispatch(logoutUser());
+                      }}
+                    >
+                      <li>LOGOUT</li>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             ) : (
               <li className="nav-item">
                 <a className="nav-link" href="/login">

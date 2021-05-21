@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import Addpizzawing from "./Addpizzawing";
 import Orderslist from "./OrdersList";
 import PizzasWingslist from "./PizzasWingsList";
-import UsersList from "./UsersList"
-import Editpizzawing from '../screens/Editpizzawing';
+import UsersList from "./UsersList";
+import Editpizzawing from "../screens/Editpizzawing";
 
 export default function Adminscreen() {
   const userstate = useSelector((state) => state.loginUserReducer);
@@ -38,12 +38,12 @@ export default function Adminscreen() {
             </li>
             <li>
               <Link to={"/admin/addpizzawing"} style={{ color: "white" }}>
-              <b>Add New Items</b>
+                <b>Add New Items</b>
               </Link>
             </li>
             <li>
               <Link to={"/admin/orderslist"} style={{ color: "white" }}>
-              <b>Orders List</b>
+                <b>Orders List</b>
               </Link>
             </li>
           </ul>
@@ -52,9 +52,17 @@ export default function Adminscreen() {
             <Route path="/admin" component={UsersList} exact />
             <Route path="/admin/userslist" component={UsersList} exact />
             <Route path="/admin/orderslist" component={Orderslist} exact />
-            <Route path="/admin/pizzaswingslist" component={PizzasWingslist} exact />
+            <Route
+              path="/admin/pizzaswingslist"
+              component={PizzasWingslist}
+              exact
+            />
             <Route path="/admin/addpizzawing" component={Addpizzawing} exact />
-            <Route path="/admin/editpizzawing/:pizzawingid" component={Editpizzawing} exact />          
+            <Route
+              path="/admin/editpizzawing/:pizzawingid"
+              component={Editpizzawing}
+              exact
+            />
           </Switch>
         </div>
       </div>

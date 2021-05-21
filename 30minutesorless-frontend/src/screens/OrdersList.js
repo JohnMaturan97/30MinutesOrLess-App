@@ -44,7 +44,7 @@ export default function Orderslist() {
                       <button
                         className="btn"
                         onClick={() => {
-                         dispatch(deliverOrder(order._id));
+                          dispatch(deliverOrder(order._id));
                         }}
                       >
                         Deliver

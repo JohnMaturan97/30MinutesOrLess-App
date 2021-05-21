@@ -140,7 +140,8 @@ const pizzaswings = [
       },
     ],
     category: "Vegeterian Pizzas",
-    image: "https://s23209.pcdn.co/wp-content/uploads/2012/05/Jalapeno-Popper-PizzaIMG_1697-600x900.jpg?p=270",
+    image:
+      "https://s23209.pcdn.co/wp-content/uploads/2012/05/Jalapeno-Popper-PizzaIMG_1697-600x900.jpg?p=270",
     description:
       "This pizza is amazing and can become more delicious if we will add some more cheese in it. Ingredients are yeast, sugar, olive oil, salt, and all-purpose flour in a big bowl. After mixing all the ingredients, it is baked by adding Jalapeno and Paprika with corns over the cheese layer. The base is made crunchy to give it best taste. It can be made more tasty by sprinkling chili flakes and Oregano as per the taste.",
   },
@@ -171,7 +172,8 @@ const pizzaswings = [
       },
     ],
     category: "Vegeterian Pizzas",
-    image: "https://cdn.theatlantic.com/thumbor/QuIN4IpSKkfBbAnzDQYEnKJeszA=/0x52:1000x614/720x405/media/img/mt/2014/10/shutterstock_53696794/original.jpg",
+    image:
+      "https://cdn.theatlantic.com/thumbor/QuIN4IpSKkfBbAnzDQYEnKJeszA=/0x52:1000x614/720x405/media/img/mt/2014/10/shutterstock_53696794/original.jpg",
     description:
       "Some people don’t like pizza that have toppings on it they just like cheese, so this pizza is for them which have two different cheese. it is baked by adding cheddar cheese and mozzarella over the pizza base.",
   },
@@ -249,8 +251,7 @@ const pizzaswings = [
       },
     ],
     category: "Famous Wings",
-    image:
-      "https://honkytonkbbq.com/wp-content/uploads/2020/10/wings72.jpg",
+    image: "https://honkytonkbbq.com/wp-content/uploads/2020/10/wings72.jpg",
     description:
       "Are you very angry? Say no more! This caramelized onion wings will do the job.",
   },
